@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    height: 100vh;
+    background: rgb(22, 130, 254);
+    background: linear-gradient(
+        45deg,
+        rgba(22, 130, 254, 1) 0%,
+        rgba(251, 16, 85, 1) 81%
+    );
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.TicTacBoard {
+    margin: 0 auto;
+    display: flex;
+    width: 470px;
+    flex-wrap: wrap;
+}
+
+.TicTacBoard__block {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    width: 150px;
+    height: 150px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    display: flex;
+    margin: 0;
+}
+
+.TicTacBoard__block:nth-child(3n) {
+    border-right: none;
+}
+
+.TicTacBoard__block:nth-child(6n) ~ .TicTacBoard__block {
+    border-bottom: none;
+}
