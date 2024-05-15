@@ -1,8 +1,8 @@
-import "./button.css"
+import "./button.css";
 
-function Button(props){
+function Button(props) {
     return (
-        <button className="button">
+        <button className={`button ${props.modify}`} onClick={props.click}>
             {props.text}
         </button>
     );

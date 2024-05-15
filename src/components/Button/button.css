@@ -31,6 +31,7 @@
 }
 
 .button:hover {
+    scale: 110%;
     border-color: #06f;
     color: #06f;
     fill: #06f;
@@ -40,4 +41,8 @@
     border-color: #06f;
     color: #06f;
     fill: #06f;
+}
+.small {
+    width: 250px;
+    height: 100px;
 }
