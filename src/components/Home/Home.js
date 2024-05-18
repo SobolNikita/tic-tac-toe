@@ -1,11 +1,11 @@
 import ButtonBlock from "../ButtonBlock/ButtonBlock";
 
-import "./wrapper.css";
+import "./home.css";
 
 function Wrapper() {
     return (
         <div className="wrapper">
-            <ButtonBlock/>
+            <ButtonBlock />
         </div>
     );
 }
